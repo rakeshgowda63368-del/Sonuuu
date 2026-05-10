@@ -244,7 +244,8 @@ function initGallery() {
 
   function goTo(i) {
     current = (i + slides.length) % slides.length;
-    carousel.style.transform = `translateX(calc(-${current * (340 + 24)}px))`;
+    const slideWidth = slides[0].offsetWidth + 24; // width + gap
+    carousel.style.transform = `translateX(-${current * slideWidth}px)`;
     dotsWrap.querySelectorAll('.gallery-dot').forEach((d, j) =>
       d.classList.toggle('active', j === current)
     );
