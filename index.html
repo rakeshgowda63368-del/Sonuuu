@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Sonuu ❤️ — May 23</title>
+  <meta name="description" content="A cinematic luxury birthday experience crafted with love for Sonuu — May 23, The Day My World Became More Beautiful." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░░ LOADING SCREEN ░░░ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-initials">S<span class="loader-heart">❤</span></div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <p class="loader-text">Preparing something magical…</p>
+    </div>
+  </div>
+
+  <!-- ░░░ CURSOR ░░░ -->
+  <div id="cursor-glow"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- ░░░ MUSIC TOGGLE ░░░ -->
+  <button id="music-btn" aria-label="Toggle music">
+    <span class="music-icon" id="music-icon">♪</span>
+    <span class="music-label">Music</span>
+  </button>
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ░░░ PARTICLE CANVAS ░░░ -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ════════════════════════════
+       SECTION 1 — HERO
+  ════════════════════════════ -->
+  <section id="hero" class="section hero-section">
+    <canvas id="galaxy-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up" data-delay="0.2">May 23 · A Day Written in Stars</div>
+      <h1 class="hero-title">
+        <span class="hero-line reveal-up" data-delay="0.4">Happy Birthday</span>
+        <span class="hero-name reveal-up" data-delay="0.7">Sonuu <span class="heart-pulse">❤️</span></span>
+      </h1>
+      <p class="hero-subtitle reveal-up" data-delay="1.0">
+        May 23 — The Day My World Became More Beautiful
+      </p>
+      <div class="hero-cta reveal-up" data-delay="1.3">
+        <a href="#special" class="btn-luxury">Begin the Journey</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <!-- Floating hearts -->
+    <div class="float-hearts" id="float-hearts"></div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 2 — WHY YOU ARE SPECIAL
+  ════════════════════════════ -->
+  <section id="special" class="section special-section">
+    <div class="section-inner">
+      <div class="section-tag reveal-fade">Written with Love</div>
+      <h2 class="section-title reveal-up">Why You Are <em>Special</em></h2>
+      <div class="special-grid">
+        <div class="special-card glass-card reveal-up" data-delay="0.1">
+          <div class="special-icon">✨</div>
+          <h3>Your Smile</h3>
+          <p>It is the kind of smile that rewrites entire universes. One look, and everything makes sense again.</p>
+        </div>
+        <div class="special-card glass-card reveal-up" data-delay="0.2">
+          <div class="special-icon">🌙</div>
+          <h3>Your Soul</h3>
+          <p>There is a quiet magic in the way you see the world — with softness, with depth, with wonder.</p>
+        </div>
+        <div class="special-card glass-card reveal-up" data-delay="0.3">
+          <div class="special-icon">💎</div>
+          <h3>Your Strength</h3>
+          <p>You carry storms with grace and light up even the darkest rooms without even trying.</p>
+        </div>
+        <div class="special-card glass-card reveal-up" data-delay="0.4">
+          <div class="special-icon">🌸</div>
+          <h3>Your Heart</h3>
+          <p>The way you love — completely, fearlessly, beautifully — is the most extraordinary thing I have ever known.</p>
+        </div>
+      </div>
+      <div class="special-quote reveal-fade" data-delay="0.5">
+        <blockquote>"You are not just someone I love.<br/>You are every reason I believe in magic."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 3 — LOVE STORY TIMELINE
+  ════════════════════════════ -->
+  <section id="timeline" class="section timeline-section">
+    <div class="section-inner">
+      <div class="section-tag reveal-fade">Our Journey</div>
+      <h2 class="section-title reveal-up">Love Story <em>Timeline</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card tilt-card">
+            <div class="timeline-icon">💫</div>
+            <div class="timeline-date">The Beginning</div>
+            <h3>The First Hello</h3>
+            <p>The moment our worlds collided. I didn't know then that I was meeting someone who would change everything.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card tilt-card">
+            <div class="timeline-icon">🌹</div>
+            <div class="timeline-date">The Spark</div>
+            <h3>When I Knew</h3>
+            <p>There was a moment — quiet, unexpected — when I realised you were the one I had been waiting for without knowing.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card tilt-card">
+            <div class="timeline-icon">🌙</div>
+            <div class="timeline-date">Midnight Talks</div>
+            <h3>Our Universe</h3>
+            <p>Late nights, deep conversations, laughter that echoed long after. We built our own little universe, just the two of us.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card tilt-card">
+            <div class="timeline-icon">❤️</div>
+            <div class="timeline-date">Today</div>
+            <h3>Forever in Progress</h3>
+            <p>Every chapter we write together is my favourite. And this birthday — May 23 — is a page I'll treasure forever.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 4 — PHOTO GALLERY
+  ════════════════════════════ -->
+  <section id="gallery" class="section gallery-section">
+    <div class="section-inner">
+      <div class="section-tag reveal-fade">Captured Moments</div>
+      <h2 class="section-title reveal-up">Our <em>Gallery</em></h2>
+      <div class="gallery-carousel-wrap">
+        <div class="gallery-carousel" id="gallery-carousel">
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <div class="gallery-placeholder">
+                <div class="gallery-placeholder-icon">📸</div>
+                <p>Add Your Photo Here</p>
+              </div>
+            </div>
+            <div class="gallery-caption">A Beautiful Moment</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <div class="gallery-placeholder">
+                <div class="gallery-placeholder-icon">💕</div>
+                <p>Add Your Photo Here</p>
+              </div>
+            </div>
+            <div class="gallery-caption">Together Always</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <div class="gallery-placeholder">
+                <div class="gallery-placeholder-icon">🌸</div>
+                <p>Add Your Photo Here</p>
+              </div>
+            </div>
+            <div class="gallery-caption">Pure Magic</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <div class="gallery-placeholder">
+                <div class="gallery-placeholder-icon">✨</div>
+                <p>Add Your Photo Here</p>
+              </div>
+            </div>
+            <div class="gallery-caption">Our Story</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <div class="gallery-placeholder">
+                <div class="gallery-placeholder-icon">💖</div>
+                <p>Add Your Photo Here</p>
+              </div>
+            </div>
+            <div class="gallery-caption">Love in Every Frame</div>
+          </div>
+        </div>
+        <button class="gallery-btn gallery-prev" id="gallery-prev" aria-label="Previous">‹</button>
+        <button class="gallery-btn gallery-next" id="gallery-next" aria-label="Next">›</button>
+        <div class="gallery-dots" id="gallery-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 5 — 23 REASONS
+  ════════════════════════════ -->
+  <section id="reasons" class="section reasons-section">
+    <div class="section-inner">
+      <div class="section-tag reveal-fade">For May 23</div>
+      <h2 class="section-title reveal-up">23 Reasons <em>I Love You</em></h2>
+      <div class="reasons-grid" id="reasons-grid">
+        <!-- Generated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 6 — ROMANTIC QUOTE
+  ════════════════════════════ -->
+  <section id="quote-section" class="section quote-bg-section">
+    <div class="quote-particles" id="quote-particles"></div>
+    <div class="section-inner quote-inner">
+      <div class="floating-quote reveal-fade">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">
+          In a universe full of stars,<br />
+          you are the one that makes<br />
+          every constellation make sense.
+        </p>
+        <div class="quote-author">— Written for Sonuu, with every piece of my heart</div>
+        <div class="quote-mark quote-mark-close">"</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 7 — COUNTDOWN
+  ════════════════════════════ -->
+  <section id="countdown" class="section countdown-section">
+    <div class="section-inner">
+      <div class="section-tag reveal-fade">The Celebration</div>
+      <h2 class="section-title reveal-up"><em>May 23</em> Countdown</h2>
+      <div class="countdown-wrap reveal-up" data-delay="0.3">
+        <div class="countdown-block glass-card">
+          <span class="countdown-num" id="cd-days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-block glass-card">
+          <span class="countdown-num" id="cd-hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-block glass-card">
+          <span class="countdown-num" id="cd-mins">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-block glass-card">
+          <span class="countdown-num" id="cd-secs">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+      <div class="countdown-msg reveal-fade" id="countdown-msg"></div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 8 — LOVE LETTER
+  ════════════════════════════ -->
+  <section id="letter" class="section letter-section">
+    <div class="section-inner">
+      <div class="section-tag reveal-fade">From the Heart</div>
+      <h2 class="section-title reveal-up">A <em>Love Letter</em> to You</h2>
+      <div class="letter-paper glass-card reveal-up" data-delay="0.3">
+        <div class="letter-lines">
+          <p class="letter-line" style="--i:0">My dearest Sonuu,</p>
+          <p class="letter-line" style="--i:1"></p>
+          <p class="letter-line" style="--i:2">On this day — your birthday — I want you to know that you are the most extraordinary person I have ever known. Not just because you're beautiful (which you absolutely are), but because of the way you make ordinary moments feel extraordinary.</p>
+          <p class="letter-line" style="--i:3"></p>
+          <p class="letter-line" style="--i:4">You laugh like the world deserves to hear it. You love like there's no limit to what your heart can hold. And you exist in a way that makes everyone around you feel warmer, lighter, more alive.</p>
+          <p class="letter-line" style="--i:5"></p>
+          <p class="letter-line" style="--i:6">May 23 is not just your birthday. It is the day the universe decided to gift the world something truly special — you.</p>
+          <p class="letter-line" style="--i:7"></p>
+          <p class="letter-line" style="--i:8">I love you more than words can hold. More than any letter can carry. More than any star in the sky you love to wish on.</p>
+          <p class="letter-line" style="--i:9"></p>
+          <p class="letter-line" style="--i:10">Happy Birthday, my love. ❤️</p>
+          <p class="letter-line letter-sign" style="--i:11">Always yours 💕</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       SECTION 9 — SURPRISE ENDING
+  ════════════════════════════ -->
+  <section id="surprise" class="section surprise-section">
+    <canvas id="fireworks-canvas"></canvas>
+    <div class="section-inner surprise-inner">
+      <div class="glow-heart-wrap">
+        <div class="glow-heart" id="glow-heart">❤</div>
+        <div class="glow-rings">
+          <div class="glow-ring r1"></div>
+          <div class="glow-ring r2"></div>
+          <div class="glow-ring r3"></div>
+        </div>
+      </div>
+      <h2 class="surprise-title reveal-up">Happy Birthday,<br/><em>Sonuu</em> ❤️</h2>
+      <p class="surprise-sub reveal-up" data-delay="0.3">May every single day of your life feel as magical as this moment.<br/>You deserve the entire universe — and I'll spend every day making sure you know it.</p>
+      <button class="btn-luxury btn-celebrate reveal-up" data-delay="0.6" id="celebrate-btn" onclick="triggerCelebration()">🎉 Celebrate!</button>
+    </div>
+  </section>
+
+  <!-- CONFETTI CANVAS -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
