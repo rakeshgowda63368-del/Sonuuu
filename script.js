@@ -71,9 +71,9 @@ function initGalaxy() {
     for (let i = 0; i < 350; i++) {
       stars.push({
         x: Math.random() * W, y: Math.random() * H,
-        r: Math.random() * 1.5 + 0.3,
+        r: Math.random() * 2 + 0.5,
         a: Math.random(), da: (Math.random() - 0.5) * 0.004,
-        color: ['#fff','#f472b6','#a855f7','#fce7f3','#d4af7a'][Math.floor(Math.random() * 5)],
+        color: ['#e91e8c','#f472b6','#c0556a','#fce7f3','#d4aab5'][Math.floor(Math.random() * 5)],
         vx: (Math.random() - 0.5) * 0.06, vy: (Math.random() - 0.5) * 0.06,
       });
     }
@@ -82,7 +82,7 @@ function initGalaxy() {
   function buildNebulas() {
     nebulas = [];
     const cols = [
-      'rgba(107,33,168,', 'rgba(233,30,99,', 'rgba(168,85,247,', 'rgba(181,112,122,'
+      'rgba(233,30,140,', 'rgba(244,114,182,', 'rgba(255,182,213,', 'rgba(192,85,106,'
     ];
     for (let i = 0; i < 6; i++) {
       nebulas.push({
@@ -96,10 +96,10 @@ function initGalaxy() {
 
   function draw() {
     ctx.clearRect(0, 0, W, H);
-    ctx.fillStyle = '#050508';
+    ctx.fillStyle = '#fff0f5';
     ctx.fillRect(0, 0, W, H);
 
-    // nebulas
+    // soft pink nebulas
     nebulas.forEach(n => {
       const g = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r);
       g.addColorStop(0, n.color + n.a + ')');
@@ -107,7 +107,7 @@ function initGalaxy() {
       ctx.fillStyle = g; ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2); ctx.fill();
     });
 
-    // stars
+    // glitter stars
     stars.forEach(s => {
       s.x += s.vx; s.y += s.vy; s.a += s.da;
       if (s.a <= 0 || s.a >= 1) s.da *= -1;
