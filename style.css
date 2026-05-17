@@ -595,7 +595,7 @@ body {
   /* Gallery */
   .gallery-carousel-wrap { border-radius: 12px; }
   .gallery-slide { min-width: calc(100vw - 2.4rem); border-radius: 12px; }
-  .gallery-img-wrap { height: 240px; }
+  .gallery-img-wrap { aspect-ratio: 4 / 5; height: auto; max-height: 65vh; }
   .gallery-btn { width: 40px; height: 40px; font-size: 1.2rem; }
   .gallery-prev { left: .5rem; }
   .gallery-next { right: .5rem; }
@@ -663,7 +663,7 @@ body {
 
   /* Gallery slide full-width */
   .gallery-slide { min-width: calc(100vw - 2rem); }
-  .gallery-img-wrap { height: 200px; }
+  .gallery-img-wrap { aspect-ratio: 4 / 5; height: auto; max-height: 65vh; }
 
   /* Quote marks hidden to prevent overflow */
   .quote-mark { display: none; }

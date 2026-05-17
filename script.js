@@ -473,7 +473,7 @@ function initMusic() {
       btn.style.borderColor = '';
     } else {
       audio.volume = 0.35;
-      if (audio.currentTime === 0) audio.currentTime = 60; // start from 1:00
+      audio.currentTime = 0;
       audio.play().catch(() => {});
       playing = true;
       icon.style.animation = 'spin-slow 2s linear infinite';
