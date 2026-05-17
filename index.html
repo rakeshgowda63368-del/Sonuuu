@@ -21,6 +21,7 @@
   <!-- ░░░ LOADING SCREEN ░░░ -->
   <div id="loader">
     <div class="loader-inner">
+      <div class="loader-headphone-msg">🎧 chinnama Use hearephonesss plss 💕</div>
       <div class="loader-initials">S<span class="loader-heart">❤</span></div>
       <div class="loader-bar-wrap">
         <div class="loader-bar"></div>
@@ -34,6 +35,10 @@
   <div id="cursor-dot"></div>
 
   <!-- ░░░ MUSIC TOGGLE ░░░ -->
+  <div id="music-prompt" class="music-prompt hidden">
+    <span class="music-prompt-text">chinna ellidhini Click maduu</span>
+    <span class="music-prompt-arrow">➔</span>
+  </div>
   <button id="music-btn" aria-label="Toggle music">
     <span class="music-icon" id="music-icon">♪</span>
     <span class="music-label">Music</span>
@@ -176,48 +181,63 @@
         <div class="gallery-carousel" id="gallery-carousel">
           <div class="gallery-slide tilt-card">
             <div class="gallery-img-wrap">
-              <div class="gallery-placeholder">
-                <div class="gallery-placeholder-icon">📸</div>
-                <p>Add Your Photo Here</p>
-              </div>
+              <video src="assets/1.mp4" autoplay loop muted playsinline></video>
             </div>
             <div class="gallery-caption">A Beautiful Moment</div>
           </div>
           <div class="gallery-slide tilt-card">
             <div class="gallery-img-wrap">
-              <div class="gallery-placeholder">
-                <div class="gallery-placeholder-icon">💕</div>
-                <p>Add Your Photo Here</p>
-              </div>
+              <img src="assets/2.jpeg" alt="Sonuu Gallery Photo 1" />
             </div>
             <div class="gallery-caption">Together Always</div>
           </div>
           <div class="gallery-slide tilt-card">
             <div class="gallery-img-wrap">
-              <div class="gallery-placeholder">
-                <div class="gallery-placeholder-icon">🌸</div>
-                <p>Add Your Photo Here</p>
-              </div>
+              <img src="assets/3.jpeg" alt="Sonuu Gallery Photo 2" />
             </div>
             <div class="gallery-caption">Pure Magic</div>
           </div>
           <div class="gallery-slide tilt-card">
             <div class="gallery-img-wrap">
-              <div class="gallery-placeholder">
-                <div class="gallery-placeholder-icon">✨</div>
-                <p>Add Your Photo Here</p>
-              </div>
+              <img src="assets/4.jpeg" alt="Sonuu Gallery Photo 4" />
             </div>
             <div class="gallery-caption">Our Story</div>
           </div>
           <div class="gallery-slide tilt-card">
             <div class="gallery-img-wrap">
-              <div class="gallery-placeholder">
-                <div class="gallery-placeholder-icon">💖</div>
-                <p>Add Your Photo Here</p>
-              </div>
+              <img src="assets/5.jpeg" alt="Sonuu Gallery Photo 5" />
             </div>
             <div class="gallery-caption">Love in Every Frame</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/6.jpeg" alt="Sonuu Gallery Photo 6" />
+            </div>
+            <div class="gallery-caption">Endless Smiles</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/7.jpeg" alt="Sonuu Gallery Photo 7" />
+            </div>
+            <div class="gallery-caption">You & Me</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/8.jpeg" alt="Sonuu Gallery Photo 8" />
+            </div>
+            <div class="gallery-caption">Precious Memories</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/9.jpeg" alt="Sonuu Gallery Photo 9" />
+            </div>
+            <div class="gallery-caption">My Favourite Person</div>
+          </div>
+          <div class="gallery-slide tilt-card">
+            <div class="gallery-img-wrap">
+              <img src="assets/10.jpeg" alt="Sonuu Gallery Photo 10" />
+            </div>
+            <div class="gallery-caption">Forever & Always</div>
           </div>
         </div>
         <button class="gallery-btn gallery-prev" id="gallery-prev" aria-label="Previous">‹</button>

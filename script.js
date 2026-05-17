@@ -458,9 +458,15 @@ function initMusic() {
   const btn   = document.getElementById('music-btn');
   const audio = document.getElementById('bg-music');
   const icon  = document.getElementById('music-icon');
+  const prompt = document.getElementById('music-prompt');
   let playing = false;
 
+  setTimeout(() => {
+    if (!playing && prompt) prompt.classList.remove('hidden');
+  }, 1000);
+
   btn.addEventListener('click', () => {
+    if (prompt) prompt.classList.add('hidden');
     if (playing) {
       audio.pause(); playing = false;
       icon.style.animation = 'none';
